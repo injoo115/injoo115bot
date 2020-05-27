@@ -84,7 +84,7 @@ client.on('message', (message) => {
     let helpImg = 'https://cdn.discordapp.com/icons/705005885759422564/79eda5e0486fea441b39b23a03018ea9.webp?size=128';
     let commandList = [
       {name: '!공지사항', desc: 'dm으로 전체 공지를 보넴니다'},
-      {name: '!청소', desc: '텍스트를 지움니다'},
+      {name: '!채팅청소', desc: '텍스트를 지움니다'},
       {name: '!초대코드', desc: '해당 채널의 초대 코드 표기'},
       {name: '봇아 나 좋아?', desc: '봇이 대답합니다'},
       {name: '봇아 너가 제일 좋아하는 사람이 누구야?', desc: '봇이 대답합니다'},
@@ -225,7 +225,7 @@ if (message.content === '/점검') {
     } else {
       return message.reply('채널에서 실행해주세요.');
     }
-  } else if(message.content.startsWith('!청소')) {
+  } else if(message.content.startsWith('!채팅청소')) {
     if(message.channel.type == 'dm') {
       return message.reply('dm에서 사용할 수 없는 명령어 입니다.');
     }
